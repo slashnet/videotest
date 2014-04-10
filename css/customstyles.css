@@ -1,0 +1,380 @@
+/*
+--------------------------------------------------------
+FONTS
+--------------------------------------------------------
+*/
+@font-face{
+	font-family: 'vagbold';
+	src: url('../fonts/vag_rounded/vagrounded-bold-webfont.eot');
+	src: local('☺'), 
+		url('../fonts/vag_rounded/vagrounded-bold-webfont.woff') format('woff'), 
+		url('../fonts/vag_rounded/vagrounded-bold-webfont.ttf') format('truetype'), 
+		url('../fonts/vag_rounded/vagrounded-bold-webfont.svg#webfontPafwfzgv') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'vaglite';
+	src: url('../fonts/vag_rounded/vagrounded-lite.eot');
+	src: local('☺'), 
+		url('../fonts/vag_rounded/vagrounded-lite.woff') format('woff'), 
+		url('../fonts/vag_rounded/vagrounded-lite.ttf') format('truetype'), 
+		url('../fonts/vag_rounded/vagrounded-lite.svg#webfontGHMT2RtC') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+--------------------------------------------------------------
+HELPER CLASSES
+--------------------------------------------------------------
+*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.textLeft { text-align: left; }
+.textRight { text-align: right; }
+.textCenter { text-align: center; }
+.alignLeft { float: left; margin:0px; }
+.alignRight { float: right;	margin:0px; }
+.alignCenter { display: block; margin:0px auto; }
+img{max-width:100%;width:auto\9;height:auto;vertical-align:middle;border:0;-ms-interpolation-mode:bicubic;}
+.full {margin-left: -15px;margin-right: -15px;}
+
+/*
+--------------------------------------------------------------
+GLOBAL STYLES
+--------------------------------------------------------------
+*/
+body {
+	padding:0px;
+	margin:0px;
+	background: url(../img/cokePattern.gif) top left repeat #333;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+.container{
+	max-width: 640px;
+}
+
+
+
+/*
+--------------------------------------------------------
+TYPOGRAPHY
+--------------------------------------------------------
+*/
+a {
+  color: #eeefed;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #fbf5c2;
+  text-decoration: none;
+}
+p {
+  margin: 0 0 9px;
+
+  /* Non standard for webkit */
+  word-break: break-word;
+
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+p small {
+  font-size: 11px;
+  color: #999999;
+}
+strong {
+  font-family: 'vagbold';
+  font-weight: 700;
+}
+h1 + p {
+  margin-top: 9px;
+}
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+p + .h1,
+p + .h2,
+p + .h3,
+p + .h4,
+p + .h5,
+p + .h6,
+ul + h1,
+ul + h2,
+ul + h3,
+ul + h4,
+ul + h5,
+ul + h6,
+ul + .h1,
+ul + .h2,
+ul + .h3,
+ul + .h4,
+ul + .h5,
+ul + .h6 {
+  margin-top: 25px;
+  margin-bottom: 6px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  font-weight: bold;
+  text-rendering: optimizelegibility;
+  color: #fff;
+  font-family: 'vagbold';
+  font-weight: 700;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  color: #fff;
+}
+h1, .h1 {
+  font-size: 34px;
+  line-height: 26px;
+}
+h1 small {
+  font-size: 16px;
+}
+h2, .h2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+h2 small {
+  font-size: 14px;
+}
+h3, .h3, h4, h5, h6, .h4, .h5, .h6 {
+  font-size: 12px; 
+  line-height: 24px; 
+}
+h3 small {
+  font-size: 12px;
+}
+
+/*
+--------------------------------------------------------
+HEADER
+--------------------------------------------------------
+*/
+header {
+	background: rgb(237,26,59);
+}
+
+.header_inner {
+	position: relative;
+}
+
+#panel_menu_link {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+}
+
+#cog_link {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+}
+
+#logo_box {
+	width: 280px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	height: 110px;
+	margin-top: 19px;
+	margin-bottom: 8px;
+}
+
+img.logo
+{
+	margin: 9px 0;
+}
+
+
+/*
+--------------------------------------------------------
+TITLE
+--------------------------------------------------------
+*/
+.callout {
+	height: 118px;
+	vertical-align: middle;
+	display: table;
+	width: 100%;
+}
+
+.callout h1 {
+	display: table-cell;
+	vertical-align: middle;
+	letter-spacing: 6px;
+}
+
+.thumbnail_container {
+	font-family: 'vagbold';
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.thumbnail_container .divider {
+	/*background: -moz-linear-gradient(top,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);*/
+	
+	padding: 7px 10px 12px;
+	margin-bottom: 8px;
+	background: url(../img/divider_grad.png) repeat-x;
+	font-size: 16px;
+	font-family: 'vaglite';
+	letter-spacing: 3px;
+}
+
+.thumbnail_container .item_link {
+	margin: 0px 6px;
+}
+
+.thumbnail_container .title {
+	color: #ed1a3b;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 5px;
+	margin-bottom: 1px;
+}
+
+.detail_image {
+	margin-bottom: 20px;
+}
+
+video {
+width:100% !important;
+height: auto !important;
+}
+
+.detail_title {
+	font-size: 22px;
+	font-family: 'vagbold';
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.detail_description {
+	font-size: 16px;
+	font-family: 'vaglite';
+	color: #b7b7b7;
+	margin-bottom: 10px;
+}
+
+.detail_buttons {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.detail_buttons .btn {
+	width: 100%;
+}
+
+hr
+{
+	width: 100%; border: 1px dotted rgb(170, 76, 76);
+}
+
+.btn-slash {
+	background: rgb(228,25,56);
+	background: -moz-linear-gradient(top,  rgba(228,25,56,1) 0%, rgba(199,21,49,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(228,25,56,1)), color-stop(100%,rgba(199,21,49,1)));
+	background: -webkit-linear-gradient(top,  rgba(228,25,56,1) 0%,rgba(199,21,49,1) 100%);
+	background: -o-linear-gradient(top,  rgba(228,25,56,1) 0%,rgba(199,21,49,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(228,25,56,1) 0%,rgba(199,21,49,1) 100%);
+	background: linear-gradient(to bottom,  rgba(228,25,56,1) 0%,rgba(199,21,49,1) 100%);
+	color: #fff;
+	font-family: 'vaglite';
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.detail_buttons fieldset {
+    border-top: 1px solid #fff;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	display: block;
+	text-align: center;
+	margin: 0px 11px 0px;
+	width: 36px;
+}
+
+
+
+.detail_buttons fieldset legend {
+    padding: 5px 7px;
+    font-size: 16px;
+    font-family: 'vaglite';
+    display: inline-block;
+    margin: 0px 8px;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+}
+
+.detail_disclaimer_list
+{
+	list-style: none;
+	padding: 0;
+}
+
+.detail_disclaimer {
+	font-size: 16px;
+	color: #898989;
+	margin-bottom: 30px;
+}
+
+.disclaimer_bold
+{
+	font-family: 'vaglite';
+	color: rgb(207,207,207);
+}
+
+.goback
+{
+	margin-bottom: 20px;
+	font-family: vaglite;
+	font-size: 20px;
+}
+
+/*
+--------------------------------------------------------
+FOOTER
+--------------------------------------------------------
+*/
+footer {
+	padding: 0px 0px 20px;
+}

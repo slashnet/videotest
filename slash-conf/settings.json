@@ -1,0 +1,9 @@
+{
+  "author":      "Chris Jacobs",
+  "description": "To test HLS server",
+  "icon":        "slash-conf/icon.jpg",
+  "name":        "Trailers",
+  "url":         "videotest/",
+  "repo_url":    "slashnet/videotest"
+}
+
